@@ -1,0 +1,12 @@
+CREATE TABLE derechos (
+  id_titulo  NVarChar(6) COLLATE utf8_general_ci NOT NULL,
+  rango_bajo Integer(5) NOT NULL,
+  rango_alto Integer(5) NOT NULL,
+  derechos   Integer(2) NOT NULL, 
+  PRIMARY KEY (
+      id_titulo, 
+      rango_bajo, 
+      rango_alto
+  )
+) ENGINE=InnoDB ROW_FORMAT=DYNAMIC DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+ALTER TABLE derechos COMMENT = '';
